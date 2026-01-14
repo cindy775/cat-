@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrap">
+    <header>
+        <div class="header-left">
+            <img src="./Black and Green Simple Online Shop Website Logo.png" alt="kitty logo" class="" height="100px">
+            
+            <div class="divider hide-mobile"></div>
+            <a href="#" class="home hide-mobile">Home</a>
+        </div>
+        
+        <nav>
+            <a href="#" class="menu-open hide-desktop">
+                <img src="list.svg" alt="open menu">
+            </a>
+            <ul>
+                 <li class="hide-desktop">
+                    <a href="#" class="menu-close">
+                        <img src="x-circle-fill.svg" alt="close menu">
+                    </a>
+                 </li>
+                    <li class="a"><a href="#"></a>Our Food</li>
+                    <li class="a"><a href="#"></a>Ingredients</li>
+                    <li class="a"><a href="#"></a>Studies</li>
+                    <li class="a"><a href="#"></a>FAQ</li> 
+               
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
+        <h1>Your cat will go <br><span class="bonkers">Bonkers</span></h1>
+        <p class="psubhead">..for the world's best testing cat food
+             sourced with only the finest ingredient.
+             Made with love from the heart of Mississippi.</p>
+             <a href="#" class="primary-cta">Get Bonkers</a>
+    </main>
+    <div class="cat-container">
+        <div class="cat">
+            <img src="images-removebg-preview.png" alt="cat image">
+            <div class="inner-circle"></div>
+            <div class="outer-circle"></div>
+        </div>
+    </div>
+</div>
+    <script>
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () => {
+        menu.classList.add('open')
+    })
+    closeBtn.addEventListener('click', () => {
+        menu.classList.remove('open')
+    })
+</script>
+</body>
+</html>
